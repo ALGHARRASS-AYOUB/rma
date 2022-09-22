@@ -165,7 +165,7 @@
                                 $('span.guests_number_error').text(res.guests_number_error);
                             }
                             else{
-                                document.write(res.html_view)
+                                document.location.reload();
                             }
                         },
                         error: function( xhr,st,tr){alert('ERROR OCCURED WHILE DELETING THE RECORD !')}

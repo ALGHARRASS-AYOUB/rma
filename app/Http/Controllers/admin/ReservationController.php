@@ -92,8 +92,7 @@ class ReservationController extends Controller
         ]);
         to_route('admin.reservations.index')->with('success','reservation has been created successfully');
 
-        $view=$this->index();
-        return response()->json(['status'=>true,'msg'=>'registerd successfully','html_view'=>$view->render()]);
+        return response()->json(['status'=>true,'msg'=>'registerd successfully']);
     }
 
 
@@ -171,8 +170,8 @@ class ReservationController extends Controller
         ]);
         to_route('admin.reservations.index')->with('success','reservation has been updated successfully');
 
-        $view=$this->index();
-        return response()->json(['status'=>true,'msg'=>'updated successfully','html_view'=>$view->render()]);
+
+        return response()->json(['status'=>true,'msg'=>'updated successfully']);
     }
 
     }
